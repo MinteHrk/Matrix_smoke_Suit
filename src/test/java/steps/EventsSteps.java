@@ -108,6 +108,7 @@ public class EventsSteps {
         Thread.sleep(2000);
         Robot robot=new Robot();
         robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
     }
 
     @When("user enters {string} on days box")
