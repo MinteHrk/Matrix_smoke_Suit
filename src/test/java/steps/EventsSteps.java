@@ -23,7 +23,6 @@ public class EventsSteps {
     @Given("user opens the Url of the web page")
     public void user_opens_the_Url_of_the_web_page() {
         Driver.getDriver().get(Config.getProperty("url"));
-       // Driver.getDriver().get("http://54.148.96.210/web/login");
     }
 
     @When("user logs in using {string} and {string}")

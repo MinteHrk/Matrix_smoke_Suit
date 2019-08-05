@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         plugin = "html:target/cucumberReport",
         features = "C:\\Users\\minte\\Matrix_smoke_Suit\\src\\test\\resources\\features",
         glue = "steps",
-        tags = "@Gula"
+        tags = "@smokeSuit"
 )
 public class Runner {
 }
