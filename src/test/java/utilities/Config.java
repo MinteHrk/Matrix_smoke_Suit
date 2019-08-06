@@ -9,7 +9,7 @@ public class Config {
     private static Properties p = new Properties();
 
     static{ //C:\Users\minte\chicagoB11\configuration.properties
-        String path ="C:\\Users\\minte\\chicago11cucumberjunit\\configuration.properties";
+        String path ="C:\\Users\\minte\\Matrix_smoke_Suit\\configuration.properties";
         try {
             FileInputStream file = new FileInputStream(path);
             p.load(file);
