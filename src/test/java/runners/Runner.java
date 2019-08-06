@@ -7,9 +7,9 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = "html:target/cucumberReport",
-        features = "C:\\Users\\minte\\Matrix_smoke_Suit\\src\\test\\resources\\features",
+        features = "/Users/smavziutov/Matrix_smoke_Suit",
         glue = "steps",
-        tags = "@smokeSuit"
+        tags = "@Gula"
 )
 public class Runner {
 }

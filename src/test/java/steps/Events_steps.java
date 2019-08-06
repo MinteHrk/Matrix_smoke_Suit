@@ -15,7 +15,7 @@ import utilities.Driver;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 
-public class EventsSteps {
+public class Events_steps {
     LoginPage loginPage=new LoginPage();
     HomePage homePage=new HomePage();
     LeavesPage leavesPage=new LeavesPage();
@@ -101,17 +101,18 @@ public class EventsSteps {
     }
 
     @When("user enters {string} on description box")
-    public void user_enters_on_description_box(String string) {
+    public void user_enters_on_description_box(String string)throws Exception {
+
         leavesPage.descriptionInput.sendKeys(string);
+
     }
 
     @When("user selects the first option of leaves type")
     public void user_selects_the_first_option_of_leaves_type() throws Exception{
         leavesPage.leaveTypeInput.click();
-        Thread.sleep(2000);
-        Robot robot=new Robot();
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
+
+      leavesPage.legalLeave2018.click();
+
 
     }
 
