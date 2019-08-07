@@ -89,9 +89,6 @@ public class LeavesPage {
     @FindBy(xpath = "//h4[@class='modal-title']")
     public WebElement warningMessage;
 
-    @FindBy(xpath = "//li[contains(@id, 'ui-id')][1]")
-    public WebElement legalLeave2018;
-
     public void explicitlyWaituntilVisisble(WebElement element){
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 5);
         wait.until(ExpectedConditions.visibilityOf(element));
