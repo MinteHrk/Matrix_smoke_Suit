@@ -4,22 +4,25 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import pages.HomePage;
 import pages.LeavesPage;
 import pages.LoginPage;
+import utilities.Config;
 import utilities.Driver;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
 
-public class EventsSteps {
+public class Events_steps {
     LoginPage loginPage=new LoginPage();
     HomePage homePage=new HomePage();
     LeavesPage leavesPage=new LeavesPage();
 
     @Given("user opens the Url of the web page")
     public void user_opens_the_Url_of_the_web_page() {
-        Driver.getDriver().get("http://54.148.96.210/web/login");
+        Driver.getDriver().get(Config.getProperty("url"));
     }
 
     @When("user logs in using {string} and {string}")
@@ -98,16 +101,19 @@ public class EventsSteps {
     }
 
     @When("user enters {string} on description box")
-    public void user_enters_on_description_box(String string) {
+    public void user_enters_on_description_box(String string)throws Exception {
+
         leavesPage.descriptionInput.sendKeys(string);
+
     }
 
     @When("user selects the first option of leaves type")
     public void user_selects_the_first_option_of_leaves_type() throws Exception{
         leavesPage.leaveTypeInput.click();
-        Thread.sleep(2000);
-        Robot robot=new Robot();
-        robot.keyPress(KeyEvent.VK_ENTER);
+
+      leavesPage.legalLeave2018.click();
+
+
     }
 
     @When("user enters {string} on days box")
