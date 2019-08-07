@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Matrix_smoke_Suit" />
         <module name="Matrix_smoke_Suit11" />
+        <module name="Matrix_smoke_Suit_new" />
+        <module name="Matrix_smoke_Suit" />
       </profile>
     </annotationProcessing>
   </component>
