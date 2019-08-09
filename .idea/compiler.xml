@@ -9,6 +9,7 @@
         <module name="Matrix_smoke_Suit11" />
         <module name="Matrix_smoke_Suit_new" />
         <module name="Matrix_smoke_Suit" />
+        <module name="Matrix_smoke_Sui" />
       </profile>
     </annotationProcessing>
   </component>
