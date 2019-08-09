@@ -6,6 +6,7 @@ import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import pages.HomePage;
 import pages.LeavesPage;
 import pages.LoginPage;
@@ -14,6 +15,7 @@ import utilities.Driver;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.util.List;
 
 public class Events_steps {
     LoginPage loginPage=new LoginPage();
@@ -31,7 +33,7 @@ public class Events_steps {
     }
 
     @When("user clicks on leaves button")
-    public void user_clicks_on_leaves_button() {
+    public void user_clicks_on_leaves_button(){
     homePage.leavesButton.click();
     }
 
@@ -84,10 +86,8 @@ public class Events_steps {
 
     @When("user clicks on one date")
     public void user_clicks_on_one_date() {
-       leavesPage.explicitlyWaituntilVisisble(leavesPage.july31);
+       leavesPage.explicitlyWaitUntilVisisble(leavesPage.july31);
         leavesPage.july31.click();
-        //This one is failing
-        // Assert.assertTrue("Leaves date verification failed", leavesPage.july31DateInput.getAttribute("data-date").contains("07-31-2019"));
     }
 
     @Then("user should see leaves request menu")
@@ -101,14 +101,14 @@ public class Events_steps {
     }
 
     @When("user enters {string} on description box")
-    public void user_enters_on_description_box(String string)throws Exception {
+    public void user_enters_on_description_box(String string) {
 
         leavesPage.descriptionInput.sendKeys(string);
 
     }
 
     @When("user selects the first option of leaves type")
-    public void user_selects_the_first_option_of_leaves_type() throws Exception{
+    public void user_selects_the_first_option_of_leaves_type() {
         leavesPage.leaveTypeInput.click();
 
       leavesPage.legalLeave2018.click();
@@ -129,6 +129,31 @@ public class Events_steps {
     @Then("user should see warning message displayed")
     public void user_should_see_warning_message_displayed() {
         Assert.assertTrue("Validation Error message is not displayed", leavesPage.warningMessage.isDisplayed());
+
     }
 
+    @When("user adds current year as a filter")
+    public void user_adds_current_year_as_a_filter() {
+        leavesPage.currentYearFilter.click();
+    }
+
+    @Then("user should see current year as part of the search filter")
+    public void user_should_see_current_year_as_part_of_the_search_filter() {
+         Assert.assertTrue(leavesPage.currentYearFilter.isDisplayed());
+    }
+
+    @When("user clicks on discard button")
+    public void user_clicks_on_discard_button() {
+        leavesPage.discardButton.click();
+
+    }
+
+    @Then("user should see message displayed")
+    public void user_should_see_message_displayed() {
+        String expected="The record has been modified, your changes will be discarded. Do you want to proceed?";
+       leavesPage.explicitlyWaitUntilVisisble(leavesPage.messageText);
+        Assert.assertEquals(leavesPage.messageText.getText(), expected);
+        Assert.assertTrue("Message is not displayed", leavesPage.messageText.isDisplayed());
+        leavesPage.okButton.click();
+    }
 }
