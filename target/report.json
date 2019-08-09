@@ -1,0 +1,982 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Log in to the web site",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8193214003,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user opens the Url of the web page",
+            "match": {
+              "location": "Events_steps.user_opens_the_Url_of_the_web_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2420474937,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user logs in using \"EventsCRM_Manager9@info.com\" and \"Ugh45wQ20\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EventsCRM_Manager9@info.com\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Ugh45wQ20\"",
+                  "offset": 53
+                }
+              ],
+              "location": "Events_steps.user_logs_in_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 465295870,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on leaves button",
+            "match": {
+              "location": "Events_steps.user_clicks_on_leaves_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Create button display",
+        "description": "",
+        "id": "events-functionality;create-button-display",
+        "after": [
+          {
+            "result": {
+              "duration": 144823590,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1681881304,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks on leaves summery button",
+            "match": {
+              "location": "Events_steps.user_clicks_on_leaves_summery_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 468370246,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user should see Create button",
+            "match": {
+              "location": "Events_steps.user_should_see_Create_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokeSuit"
+          },
+          {
+            "name": "@Mirzat"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Log in to the web site",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2956562512,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user opens the Url of the web page",
+            "match": {
+              "location": "Events_steps.user_opens_the_Url_of_the_web_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1505200257,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user logs in using \"EventsCRM_Manager9@info.com\" and \"Ugh45wQ20\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EventsCRM_Manager9@info.com\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Ugh45wQ20\"",
+                  "offset": 53
+                }
+              ],
+              "location": "Events_steps.user_logs_in_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 465800002,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on leaves button",
+            "match": {
+              "location": "Events_steps.user_clicks_on_leaves_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Search filter with approved requests",
+        "description": "",
+        "id": "events-functionality;search-filter-with-approved-requests",
+        "after": [
+          {
+            "result": {
+              "duration": 109312454,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2352328226,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user clicks on add search filter",
+            "match": {
+              "location": "Events_steps.user_clicks_on_add_search_filter()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1061412714,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user clicks on filter button to search",
+            "match": {
+              "location": "Events_steps.user_clicks_on_filter_button_to_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89610372,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user adds approved as a filter",
+            "match": {
+              "location": "Events_steps.user_adds_approved_as_a_filter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37306137,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user should see approved as part of the filter",
+            "match": {
+              "location": "Events_steps.user_should_see_approved_as_part_of_the_filter()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokeSuit"
+          },
+          {
+            "name": "@Minte"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Log in to the web site",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2950101840,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user opens the Url of the web page",
+            "match": {
+              "location": "Events_steps.user_opens_the_Url_of_the_web_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1470899730,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user logs in using \"EventsCRM_Manager9@info.com\" and \"Ugh45wQ20\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EventsCRM_Manager9@info.com\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Ugh45wQ20\"",
+                  "offset": 53
+                }
+              ],
+              "location": "Events_steps.user_logs_in_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 517986902,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on leaves button",
+            "match": {
+              "location": "Events_steps.user_clicks_on_leaves_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Calender Visibility",
+        "description": "",
+        "id": "events-functionality;calender-visibility",
+        "after": [
+          {
+            "result": {
+              "duration": 122507213,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 128498201,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user clicks on leaves request button",
+            "match": {
+              "location": "Events_steps.user_clicks_on_leaves_request_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 55596465,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user should see the calender visibly",
+            "match": {
+              "location": "Events_steps.user_should_see_the_calender_visibly()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokeSuit"
+          },
+          {
+            "name": "@Samat"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Log in to the web site",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2936535834,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user opens the Url of the web page",
+            "match": {
+              "location": "Events_steps.user_opens_the_Url_of_the_web_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1500443137,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user logs in using \"EventsCRM_Manager9@info.com\" and \"Ugh45wQ20\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EventsCRM_Manager9@info.com\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Ugh45wQ20\"",
+                  "offset": 53
+                }
+              ],
+              "location": "Events_steps.user_logs_in_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 482413980,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on leaves button",
+            "match": {
+              "location": "Events_steps.user_clicks_on_leaves_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Create leaves through calendar",
+        "description": "",
+        "id": "events-functionality;create-leaves-through-calendar",
+        "after": [
+          {
+            "result": {
+              "duration": 111152087,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 130357657,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user clicks on leaves request button",
+            "match": {
+              "location": "Events_steps.user_clicks_on_leaves_request_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2880819257,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user clicks on one date",
+            "match": {
+              "location": "Events_steps.user_clicks_on_one_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 568645286,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user should see leaves request menu",
+            "match": {
+              "location": "Events_steps.user_should_see_leaves_request_menu()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokeSuit"
+          },
+          {
+            "name": "@Samat2"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Log in to the web site",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2957917927,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user opens the Url of the web page",
+            "match": {
+              "location": "Events_steps.user_opens_the_Url_of_the_web_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1462445837,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user logs in using \"EventsCRM_Manager9@info.com\" and \"Ugh45wQ20\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EventsCRM_Manager9@info.com\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Ugh45wQ20\"",
+                  "offset": 53
+                }
+              ],
+              "location": "Events_steps.user_logs_in_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 480760845,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on leaves button",
+            "match": {
+              "location": "Events_steps.user_clicks_on_leaves_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "save button verification",
+        "description": "",
+        "id": "events-functionality;save-button-verification",
+        "after": [
+          {
+            "result": {
+              "duration": 129078920,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 133523027,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user clicks on leaves request button",
+            "match": {
+              "location": "Events_steps.user_clicks_on_leaves_request_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3033323529,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user clicks on date button",
+            "match": {
+              "location": "Events_steps.user_clicks_on_date_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 596589324,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user enters \"vacation\" on description box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"vacation\"",
+                  "offset": 12
+                }
+              ],
+              "location": "Events_steps.user_enters_on_description_box(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 338396771,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user selects the first option of leaves type",
+            "match": {
+              "location": "Events_steps.user_selects_the_first_option_of_leaves_type()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 72592301,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user enters \"3\" on days box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 12
+                }
+              ],
+              "location": "Events_steps.user_enters_on_days_box(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 93044533,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user clicks on save button",
+            "match": {
+              "location": "Events_steps.user_clicks_on_save_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 206794181,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user should see warning message displayed",
+            "match": {
+              "location": "Events_steps.user_should_see_warning_message_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokeSuit"
+          },
+          {
+            "name": "@Gula"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Log in to the web site",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2969724416,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user opens the Url of the web page",
+            "match": {
+              "location": "Events_steps.user_opens_the_Url_of_the_web_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1485442399,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user logs in using \"EventsCRM_Manager9@info.com\" and \"Ugh45wQ20\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EventsCRM_Manager9@info.com\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Ugh45wQ20\"",
+                  "offset": 53
+                }
+              ],
+              "location": "Events_steps.user_logs_in_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 532423826,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on leaves button",
+            "match": {
+              "location": "Events_steps.user_clicks_on_leaves_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 38,
+        "name": "add current year filter on search",
+        "description": "",
+        "id": "events-functionality;add-current-year-filter-on-search",
+        "after": [
+          {
+            "result": {
+              "duration": 109857165,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1370613081,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "user clicks on add search filter",
+            "match": {
+              "location": "Events_steps.user_clicks_on_add_search_filter()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1061616175,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "user clicks on filter button to search",
+            "match": {
+              "location": "Events_steps.user_clicks_on_filter_button_to_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92772902,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user adds current year as a filter",
+            "match": {
+              "location": "Events_steps.user_adds_current_year_as_a_filter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30461101,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "user should see current year as part of the search filter",
+            "match": {
+              "location": "Events_steps.user_should_see_current_year_as_part_of_the_search_filter()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokeSuit"
+          },
+          {
+            "name": "@yodi"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Log in to the web site",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3099041268,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user opens the Url of the web page",
+            "match": {
+              "location": "Events_steps.user_opens_the_Url_of_the_web_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1511665526,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user logs in using \"EventsCRM_Manager9@info.com\" and \"Ugh45wQ20\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EventsCRM_Manager9@info.com\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Ugh45wQ20\"",
+                  "offset": 53
+                }
+              ],
+              "location": "Events_steps.user_logs_in_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 470554061,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on leaves button",
+            "match": {
+              "location": "Events_steps.user_clicks_on_leaves_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 44,
+        "name": "discard button verififcation",
+        "description": "",
+        "id": "events-functionality;discard-button-verififcation",
+        "after": [
+          {
+            "result": {
+              "duration": 112723489,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 158690584,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "user clicks on leaves request button",
+            "match": {
+              "location": "Events_steps.user_clicks_on_leaves_request_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2718156728,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "user clicks on date button",
+            "match": {
+              "location": "Events_steps.user_clicks_on_date_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 700431779,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "user enters \"vacation\" on description box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"vacation\"",
+                  "offset": 12
+                }
+              ],
+              "location": "Events_steps.user_enters_on_description_box(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 233304384,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "user selects the first option of leaves type",
+            "match": {
+              "location": "Events_steps.user_selects_the_first_option_of_leaves_type()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71771564,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "user enters \"3\" on days box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 12
+                }
+              ],
+              "location": "Events_steps.user_enters_on_days_box(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73238319,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user clicks on discard button",
+            "match": {
+              "location": "Events_steps.user_clicks_on_discard_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 280253005,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user should see message displayed",
+            "match": {
+              "location": "Events_steps.user_should_see_message_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokeSuit"
+          },
+          {
+            "name": "@Mehmet"
+          }
+        ]
+      }
+    ],
+    "name": "Events functionality",
+    "description": "",
+    "id": "events-functionality",
+    "keyword": "Feature",
+    "uri": "./src/test/resources/features/Events.feature",
+    "tags": [
+      {
+        "name": "@smokeSuit",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
