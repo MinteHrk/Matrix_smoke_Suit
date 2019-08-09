@@ -68,16 +68,16 @@ public class LeavesPage {
     @FindBy(xpath = "//button[@class='btn btn-default btn-sm o_form_button_cancel']")
     public WebElement discardButton;
 
-    @FindBy(xpath = "//*[@id=\"modal_36\"]/div/div/div[3]/button[1]/span")
+    @FindBy(xpath = "//div[contains(@id, 'modal_')]/div/div/div[3]/button[1]/span")
     public WebElement okButton;
 
-    @FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div/div/div/div/p")
+    @FindBy(xpath = "//div[contains(@id, 'modal_')]/div/div/div[2]")
     public WebElement messageText;
 
     @FindBy(xpath = "//div[2]/div[1]/div[3]/div[1]/div[1]/ul/li[12]/a")
     public WebElement currentYearFilter;
 
-    @FindBy(xpath = "//button[@class=\"btn btn-primary btn-sm o_form_button_save\"]")
+    @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_form_button_save']")
     public WebElement saveButton;
 
     @FindBy (linkText = "Leaves Summary")
@@ -89,11 +89,14 @@ public class LeavesPage {
     @FindBy(xpath = "//h4[@class='modal-title']")
     public WebElement warningMessage;
 
-    public void explicitlyWaituntilVisisble(WebElement element){
+    @FindBy(xpath = "//li[contains(@id, 'ui-id')][1]")
+    public WebElement legalLeave2018;
+
+    public void explicitlyWaitUntilVisisble(WebElement element){
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 5);
         wait.until(ExpectedConditions.visibilityOf(element));
     }
-    public void explicitlyWaituntilclickable(WebElement element){
+    public void explicitlyWaitUntilclickable(WebElement element){
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 5);
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }

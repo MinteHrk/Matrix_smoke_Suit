@@ -15,6 +15,7 @@ public class HomePage {
         PageFactory.initElements(driver,this);
 
     }
-    @FindBy (xpath = "//nav[@id='oe_main_menu_navbar']//ul/li[12]/a")
+    @FindBy (xpath = "/html/body/nav/div[2]/ul[1]/li[12]")
     public WebElement leavesButton;
+
 }
